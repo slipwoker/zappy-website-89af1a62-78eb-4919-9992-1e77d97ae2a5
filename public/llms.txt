@@ -1,47 +1,57 @@
-# Business — Generative Engine Optimization Map
+# T.D GLOBAL — Generative Engine Optimization Map
+
+> An international B2B company representing global manufacturing plants specializing in advanced outdoor lighting fixtures and high-standard electrical cables. The company operates across multiple countries, positioning itself as a supplier of the most innovative and premium lighting solutions and cables in the world. The brand conveys professionalism, reliability, and technological leadership in the electrical and lighting infrastructure industry.
 
 ---
 
 ## Pages
 
 ### T.D GLOBAL — T.D GLOBAL
-https://example.com
+https://t-d-global.zappy5.app
 T.D GLOBAL מייצגת מפעלי ייצור עולמיים בתחום גופי תאורה חוץ מתקדמים וכבלי חשמל בתקן בינלאומי. הפתרונות שלנו מגיעים לקבלנים וחברות תשתית ברחבי העולם. גלו את ההבדל האמיתי.
 
 ### מובילים את תעשיית החשמל והתאורה הגלובלית — T.D GLOBAL
-https://example.com/company
+https://t-d-global.zappy5.app/company
 T.D GLOBAL היא חברת B2B בינלאומית עם ניסיון מוכח בייצוג מפעלי ייצור מובילים בעולם. אמינות, מקצועיות והובלה טכנולוגית — אלו הערכים שמניעים אותנו בכל פרויקט ובכל מדינה.
 
 ### פתרונות תאורה וכבלים שמשנים תשתיות — T.D GLOBAL
-https://example.com/solutions
+https://t-d-global.zappy5.app/solutions
 מגופי תאורה חוץ חכמים ועד ספק כבלי חשמל מתח נמוך ברמה עולמית — T.D GLOBAL מציעה את הטכנולוגיה המתקדמת ביותר לפרויקטים תשתיתיים גדולים. בדקו את הקטלוג המלא שלנו.
 
 ### צרו קשר ובנו את שיתוף הפעולה הבא — T.D GLOBAL
-https://example.com/contact
+https://t-d-global.zappy5.app/contact
 מחפשים ספק כבלי חשמל מתח נמוך או גופי תאורה חוץ לפרויקט הבא שלכם? צוות T.D GLOBAL זמין לקבלנים וחברות תשתית ברחבי העולם. פנו אלינו עוד היום ונמצא יחד את הפתרון המושלם.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://t-d-global.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://t-d-global.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://t-d-global.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About T.D GLOBAL
+An international B2B company representing global manufacturing plants specializing in advanced outdoor lighting fixtures and high-standard electrical cables. The company operates across multiple countries, positioning itself as a supplier of the most innovative and premium lighting solutions and cables in the world. The brand conveys professionalism, reliability, and technological leadership in the electrical and lighting infrastructure industry.
+
+## Target Audience
+לקוחות עסקיים, קבלנים, חברות תשתית ותאורה
+
+## Industry
+חשמל ותאורה - ייצוא ויבוא בינלאומי
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://t-d-global.zappy5.app/sitemap.xml
+- **Robots.txt**: https://t-d-global.zappy5.app/robots.txt
