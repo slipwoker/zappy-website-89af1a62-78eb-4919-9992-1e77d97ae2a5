@@ -4276,8 +4276,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   z-index: 2;
 }
 
+/* ── Card Body ── */
 .solutions-product-categories-section .spcs-card-body {
-  padding: 44px 28px 32px;
+  padding: 28px 28px 32px;
   flex: 1;
   display: flex;
   flex-direction: column;
