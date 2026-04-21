@@ -1305,10 +1305,10 @@ window.onload = function() {
                 '[social_facebook]',
                 '[social instagram]',
                 '[social_instagram]',
-                '[social whatsapp]',
-                '[social_whatsapp]',
+                'https://wa.me/972505554912',
+                'https://wa.me/972505554912',
                 '[social_twitter]',
-                '[social_linkedin]',
+                'https://linkedin.com/company/t-d-global-distribution-b2109b3a5/',
                 '[social_youtube]',
                 '[social_tiktok]',
                 '[social_pinterest]'

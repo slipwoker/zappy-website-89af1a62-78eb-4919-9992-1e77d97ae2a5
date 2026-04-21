@@ -1,6 +1,4 @@
-# T.D GLOBAL — Generative Engine Optimization Map
-
-> An international B2B company representing global manufacturing plants specializing in advanced outdoor lighting fixtures and high-standard electrical cables. The company operates across multiple countries, positioning itself as a supplier of the most innovative and premium lighting solutions and cables in the world. The brand conveys professionalism, reliability, and technological leadership in the electrical and lighting infrastructure industry.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,15 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About T.D GLOBAL
-An international B2B company representing global manufacturing plants specializing in advanced outdoor lighting fixtures and high-standard electrical cables. The company operates across multiple countries, positioning itself as a supplier of the most innovative and premium lighting solutions and cables in the world. The brand conveys professionalism, reliability, and technological leadership in the electrical and lighting infrastructure industry.
-
-## Target Audience
-לקוחות עסקיים, קבלנים, חברות תשתית ותאורה
-
-## Industry
-חשמל ותאורה - ייצוא ויבוא בינלאומי
-
+## About Business
 ---
 
 # Additional Resources
