@@ -185,18 +185,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
+}html[dir="rtl"]{
   font-size: 16px !important;
   direction: rtl;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
-}
-
-body {
+}html[dir="rtl"]{
   font-size: 16px !important;
   line-height: 1.7 !important;
   font-family: 'Rubik', sans-serif;
@@ -329,22 +325,11 @@ ol {
 table {
   border-collapse: collapse;
   width: 100%;
-}
-
-input,
+}input,
 textarea,
-select {
-  border-radius: var(--radius-input);
-  border: 1px solid var(--border-light);
-  padding: 10px 14px;
-  font-size: 15px;
-  color: var(--text-dark);
-  background-color: #fff;
-  transition: var(--transition-default);
-  outline: none;
-  width: 100%;
-  direction: rtl;
-}
+select{border-radius: var(--radius-input);border: 1px solid var(--border-light);padding: 10px 14px;font-size: 15px;color: var(--text-dark);background-color: #fff;transition: var(--transition-default);outline: none;width: 100%;}html[dir="rtl"] input,
+textarea,
+select{direction: rtl;}
 
 input:focus,
 textarea:focus,
@@ -1411,46 +1396,28 @@ html[lang="fr"] .nav-cta-container {
 /* ============================================
    RTL DESKTOP LAYOUT (Hebrew, Arabic)
    ============================================ */
-html[dir="rtl"] .nav-container,
+.nav-container,
 html[lang="he"] .nav-container,
-html[lang="ar"] .nav-container {
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
+html[lang="ar"] .nav-container{flex-direction: row-reverse;justify-content: space-between;}
 
 /* CTA on the left in RTL */
-html[dir="rtl"] .nav-cta-container,
+.nav-cta-container,
 html[lang="he"] .nav-cta-container,
-html[lang="ar"] .nav-cta-container {
-  order: -1;
-  margin: 0;
-}
+html[lang="ar"] .nav-cta-container{order: -1;margin: 0;}
 
 /* Wrapper groups menu and logo together on the right */
-html[dir="rtl"] .nav-right-group,
+.nav-right-group,
 html[lang="he"] .nav-right-group,
-html[lang="ar"] .nav-right-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  order: 1;
-  flex: 1;
-  min-width: 0;
-  flex-direction: row-reverse;
-}
+html[lang="ar"] .nav-right-group{display: flex;align-items: center;gap: 1rem;order: 1;flex: 1;min-width: 0;flex-direction: row-reverse;}
 
 /* Within wrapper: Logo on far right, menu to its left */
-html[dir="rtl"] .nav-right-group .nav-brand,
+.nav-right-group .nav-brand,
 html[lang="he"] .nav-right-group .nav-brand,
-html[lang="ar"] .nav-right-group .nav-brand {
-  order: 2;
-}
+html[lang="ar"] .nav-right-group .nav-brand{order: 2;}
 
-html[dir="rtl"] .nav-right-group .nav-menu,
+.nav-right-group .nav-menu,
 html[lang="he"] .nav-right-group .nav-menu,
-html[lang="ar"] .nav-right-group .nav-menu {
-  order: 1;
-}
+html[lang="ar"] .nav-right-group .nav-menu{order: 1;}
 
 /* ============================================
    DROPDOWN MENUS (Desktop)
@@ -1509,12 +1476,9 @@ html[lang="ar"] .nav-right-group .nav-menu {
   margin: 0;
 }
 
-html[dir="rtl"] .dropdown-menu,
+.dropdown-menu,
 html[lang="he"] .dropdown-menu,
-html[lang="ar"] .dropdown-menu {
-  right: 0;
-  left: auto;
-}
+html[lang="ar"] .dropdown-menu{right: 0;left: auto;}
 
 html[dir="ltr"] .dropdown-menu,
 html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
@@ -1683,20 +1647,12 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
      which breaks AI centering hacks (top:50% + margin-top:-Npx).
      Use explicit left/right + transform for robust vertical centering. */
   .nav-brand,
-  html[dir="rtl"] .nav-brand,
+  .nav-brand,
   html[lang="he"] .nav-brand,
   html[lang="ar"] .nav-brand,
-  html[dir="rtl"] .nav-right-group .nav-brand,
+  .nav-right-group .nav-brand,
   html[lang="he"] .nav-right-group .nav-brand,
-  html[lang="ar"] .nav-right-group .nav-brand {
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    margin: 0 !important;
-    text-align: center;
-    order: 0 !important;
-  }
+  html[lang="ar"] .nav-right-group .nav-brand{position: absolute !important;left: 50% !important;top: 50% !important;transform: translate(-50%, -50%) !important;margin: 0 !important;text-align: center;order: 0 !important;}
   
   /* Mobile logo size: fixed at 35px/110px — do not adjust, especially for e-commerce/catalog sites */
   .logo {
@@ -1810,11 +1766,9 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
     font-size: 0.9em;
   }
   
-  html[dir="rtl"] .dropdown-menu li a,
+  .dropdown-menu li a,
   html[lang="he"] .dropdown-menu li a,
-  html[lang="ar"] .dropdown-menu li a {
-    padding: 12px 50px 12px 30px !important;
-  }
+  html[lang="ar"] .dropdown-menu li a{padding: 12px 50px 12px 30px !important;}
 
   /* Mobile submenu links: use nav panel text color instead of desktop submenu color.
      Desktop submenu uses light bg + dark text, but mobile submenu is inline (transparent)
@@ -1919,32 +1873,21 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
    Uses !important to override any inline styles
    ============================================ */
 @media (max-width: 768px) {
-  html[dir="rtl"] .mobile-toggle,
+  .mobile-toggle,
   html[lang="he"] .mobile-toggle,
-  html[lang="ar"] .mobile-toggle {
-    left: auto !important;
-    right: 12px !important;
-  }
+  html[lang="ar"] .mobile-toggle{left: auto !important;right: 12px !important;}
   
-  html[dir="rtl"] .phone-header-btn,
+  .phone-header-btn,
   html[lang="he"] .phone-header-btn,
-  html[lang="ar"] .phone-header-btn {
-    left: 12px !important;
-    right: auto !important;
-  }
+  html[lang="ar"] .phone-header-btn{left: 12px !important;right: auto !important;}
   
-  html[dir="rtl"] .nav-menu,
+  .nav-menu,
   html[lang="he"] .nav-menu,
-  html[lang="ar"] .nav-menu {
-    right: 0 !important;
-    left: auto !important;
-  }
+  html[lang="ar"] .nav-menu{right: 0 !important;left: auto !important;}
   
-  html[dir="rtl"] .nav-menu a,
+  .nav-menu a,
   html[lang="he"] .nav-menu a,
-  html[lang="ar"] .nav-menu a {
-    text-align: right !important;
-  }
+  html[lang="ar"] .nav-menu a{text-align: right !important;}
   
   /* Hide desktop language switcher on mobile - hamburger menu handles it */
   /* High specificity to override stored CSS */
@@ -2002,73 +1945,51 @@ nav.navbar {
 
 /* RTL layout for cloned sites (without nav-right-group) */
 /* Base RTL styles - apply to all screens */
-html[dir="rtl"] .nav-container,
+.nav-container,
 html[lang="he"] .nav-container,
-html[lang="ar"] .nav-container {
-  justify-content: space-between !important;
-}
+html[lang="ar"] .nav-container{justify-content: space-between !important;}
 
 /* Logo stays on right in RTL - DESKTOP ONLY */
 /* On mobile, logo should be centered (handled by mobile media query) */
 @media (min-width: 769px) {
-  html[dir="rtl"] .nav-brand,
-  html[dir="rtl"] .logo-link,
+  .nav-brand,
+  .logo-link,
   html[lang="he"] .nav-brand,
   html[lang="he"] .logo-link,
   html[lang="ar"] .nav-brand,
-  html[lang="ar"] .logo-link {
-    order: 2 !important;
-    margin-left: 1.5rem !important;
-  }
+  html[lang="ar"] .logo-link{order: 2 !important;margin-left: 1.5rem !important;}
 }
 
 /* Base RTL nav-menu styles - display:flex but NOT flex-direction (that's desktop-only) */
-html[dir="rtl"] .nav-menu,
+.nav-menu,
 html[lang="he"] .nav-menu,
-html[lang="ar"] .nav-menu {
-  order: 1 !important;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
+html[lang="ar"] .nav-menu{order: 1 !important;margin-right: 0 !important;margin-left: 0 !important;}
 
 /* CTA button pushed to far left in RTL */
-html[dir="rtl"] .cta-button,
-html[dir="rtl"] a.cta-button,
+.cta-button,
+a.cta-button,
 html[dir="rtl"] .nav-cta-btn,
 html[lang="he"] .cta-button,
 html[lang="he"] a.cta-button,
 html[lang="he"] .nav-cta-btn,
 html[lang="ar"] .cta-button,
 html[lang="ar"] a.cta-button,
-html[lang="ar"] .nav-cta-btn {
-  order: 0 !important;
-  margin-right: auto !important;
-  margin-left: 0 !important;
-}
+html[lang="ar"] .nav-cta-btn{order: 0 !important;margin-right: auto !important;margin-left: 0 !important;}
 
 /* DESKTOP ONLY: Horizontal flex layout for RTL navbar - prevents breaking mobile vertical menu */
 @media (min-width: 769px) {
-  html[dir="rtl"] .nav-container,
+  .nav-container,
   html[lang="he"] .nav-container,
-  html[lang="ar"] .nav-container {
-    flex-direction: row-reverse !important;
-  }
+  html[lang="ar"] .nav-container{flex-direction: row-reverse !important;}
   
-  html[dir="rtl"] .nav-menu,
+  .nav-menu,
   html[lang="he"] .nav-menu,
-  html[lang="ar"] .nav-menu {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 1.5rem !important;
-    /* flex:1 ensures menu fills space between brand and CTA so items
+  html[lang="ar"] .nav-menu{display: flex !important;flex-direction: row !important;align-items: center !important;gap: 1.5rem !important;/* flex:1 ensures menu fills space between brand and CTA so items
        stay adjacent to the logo instead of centering when the
        .nav-right-group wrapper is absent (cloned sites, etc.).
        justify-content: flex-start pushes items toward the logo
        (in RTL, flex-start = right side, adjacent to the brand). */
-    flex: 1 !important;
-    justify-content: flex-start !important;
-  }
+    flex: 1 !important;justify-content: flex-start !important;}
 }
 
 /* ============================================
@@ -2076,39 +1997,9 @@ html[lang="ar"] .nav-cta-btn {
    ============================================ */
 
 /* Post-generation fix: Remove main element margin-top and padding-top */
-main { margin-top: 0 !important; padding-top: 0 !important; }
-
-
-/* Footer Styles */
-.site-footer {
-  --primary: #001F3F;
-  --secondary: #E9EEF5;
-  --accent: #21C7C7;
-  --bg-light: #F8FAFC;
-  --bg-dark: #001F3F;
-  --text-dark: #0F172A;
-  --text-light: #F8FAFC;
-  --text-muted: #64748B;
-  --border-light: #D7E0EA;
-  --border-dark: #2A4A6B;
-  --footer-bg: #001629;
-  --footer-bg-bottom: #00111f;
-  --footer-text: #F8FAFC;
-  --footer-muted: rgba(248, 250, 252, 0.62);
-  --footer-link: rgba(248, 250, 252, 0.78);
-  --footer-link-hover: #21C7C7;
-  --footer-border: #2A4A6B;
-  --radius-sm: 3px;
-  --radius-md: 4px;
-  --shadow: 0 2px 8px rgba(20, 41, 78, 0.07);
-  --transition: all 0.22s ease;
-  font-family: 'Rubik', sans-serif;
-  direction: rtl;
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
-  margin: 0;
-  padding: 0;
-}
+main { margin-top: 0 !important; padding-top: 0 !important; }/* Footer Styles */
+.site-footer{--primary: #001F3F;--secondary: #E9EEF5;--accent: #21C7C7;--bg-light: #F8FAFC;--bg-dark: #001F3F;--text-dark: #0F172A;--text-light: #F8FAFC;--text-muted: #64748B;--border-light: #D7E0EA;--border-dark: #2A4A6B;--footer-bg: #001629;--footer-bg-bottom: #00111f;--footer-text: #F8FAFC;--footer-muted: rgba(248, 250, 252, 0.62);--footer-link: rgba(248, 250, 252, 0.78);--footer-link-hover: #21C7C7;--footer-border: #2A4A6B;--radius-sm: 3px;--radius-md: 4px;--shadow: 0 2px 8px rgba(20, 41, 78, 0.07);--transition: all 0.22s ease;font-family: 'Rubik', sans-serif;background-color: var(--footer-bg);color: var(--footer-text);margin: 0;padding: 0;}html[dir="rtl"] /* Footer Styles */
+.site-footer{direction: rtl;}
 
 .footer-container {
   max-width: 1200px;
@@ -2466,26 +2357,14 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
 /* Footer contact alignment fix */
 .footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
 /* RTL footer contact: icon on the right (start) side, text on the left */
-html[dir="rtl"] .footer-contact li,
-html[dir="rtl"] .site-footer .footer-contact li,
-html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li {
-  flex-direction: row !important;
-  justify-content: flex-start !important;
-}
-html[dir="rtl"] .footer-contact .contact-icon { order: 0 !important; }
-html[dir="rtl"] .footer-contact .contact-text { order: 1 !important; }
-html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
-/* index-hero */
-.index-hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: visible;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  padding-bottom: 90px;
-  direction: rtl;
-}
+.footer-contact li,
+.site-footer .footer-contact li,
+html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-direction: row !important;justify-content: flex-start !important;}
+.footer-contact .contact-icon{order: 0 !important;}
+.footer-contact .contact-text{order: 1 !important;}
+.footer-contact li > a{flex-direction: row !important;}/* index-hero */
+.index-hero-section{position: relative;width: 100%;min-height: 100vh;overflow: visible;background-color: var(--bg-dark);color: var(--text-light);padding-bottom: 90px;}html[dir="rtl"] /* index-hero */
+.index-hero-section{direction: rtl;}
 
 /* ── Background Image ── */
 .index-hero-section .index-hero-bg {
@@ -2765,19 +2644,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
       rgba(0,10,30,0.50) 100%
     );
   }
-}
-
-/* index-capabilities */
-.index-capabilities-section {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  background-color: #FFFFFF;
-  color: var(--text-dark);
-  position: relative;
-  overflow: visible;
-  padding: 96px 0 70px;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* index-capabilities */
+.index-capabilities-section{background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);background-color: #FFFFFF;color: var(--text-dark);position: relative;overflow: visible;padding: 96px 0 70px;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* index-capabilities */
+.index-capabilities-section{direction: rtl;}
 
 /* ── Container ── */
 .index-capabilities-section .index-capabilities-container {
@@ -2786,17 +2655,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   padding: 0 40px;
   position: relative;
   z-index: 1;
-}
-
-/* ── Upper Row ── */
-.index-capabilities-section .index-capabilities-upper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  align-items: center;
-  margin-bottom: 64px;
-  direction: rtl;
-}
+}/* ── Upper Row ── */
+.index-capabilities-section .index-capabilities-upper{display: grid;grid-template-columns: 1fr 1fr;gap: 56px;align-items: center;margin-bottom: 64px;}html[dir="rtl"] /* ── Upper Row ── */
+.index-capabilities-section .index-capabilities-upper{direction: rtl;}
 
 /* ── Intro Block ── */
 .index-capabilities-section .index-capabilities-intro {
@@ -2870,16 +2731,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 .index-capabilities-section .index-capabilities-image-frame:hover img {
   transform: scale(1.02);
-}
-
-/* ── Capability Cards Grid ── */
-.index-capabilities-section .index-capabilities-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 40px;
-  direction: rtl;
-}
+}/* ── Capability Cards Grid ── */
+.index-capabilities-section .index-capabilities-cards{display: grid;grid-template-columns: repeat(3, 1fr);gap: 24px;margin-bottom: 40px;}html[dir="rtl"] /* ── Capability Cards Grid ── */
+.index-capabilities-section .index-capabilities-cards{direction: rtl;}
 
 /* ── Individual Card ── */
 .index-capabilities-section .index-cap-card {
@@ -2942,23 +2796,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   color: var(--text-muted);
   margin: 0;
   text-align: right;
-}
-
-/* ── Assurance Strip ── */
-.index-capabilities-section .index-capabilities-assurance {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-card, 4px);
-  box-shadow: 0 2px 8px rgba(20, 41, 78, 0.07);
-  padding: 20px 32px;
-  direction: rtl;
-  flex-wrap: wrap;
-}
+}/* ── Assurance Strip ── */
+.index-capabilities-section .index-capabilities-assurance{display: flex;flex-direction: row;align-items: center;justify-content: center;gap: 0;background: #FFFFFF;border: 1px solid var(--border-light);border-radius: var(--radius-card, 4px);box-shadow: 0 2px 8px rgba(20, 41, 78, 0.07);padding: 20px 32px;flex-wrap: wrap;}html[dir="rtl"] /* ── Assurance Strip ── */
+.index-capabilities-section .index-capabilities-assurance{direction: rtl;}
 
 .index-capabilities-section .index-assurance-item {
   display: flex;
@@ -3074,17 +2914,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
     width: 100%;
     justify-content: flex-end;
   }
-}
-
-/* index-showcase */
-.index-showcase-section {
-  position: relative;
-  overflow: visible;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  color: var(--text-dark);
-  padding: 96px 0 80px;
-  direction: rtl;
-}
+}/* index-showcase */
+.index-showcase-section{position: relative;overflow: visible;background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);color: var(--text-dark);padding: 96px 0 80px;}html[dir="rtl"] /* index-showcase */
+.index-showcase-section{direction: rtl;}
 
 .index-showcase-section .showcase-container {
   max-width: 1280px;
@@ -3132,15 +2964,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   margin: 0;
   max-width: none !important;
   text-align: center;
-}
-
-/* ── 2×2 Grid ── */
-.index-showcase-section .showcase-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  direction: rtl;
-}
+}/* ── 2×2 Grid ── */
+.index-showcase-section .showcase-grid{display: grid;grid-template-columns: 1fr 1fr;gap: 24px;}html[dir="rtl"] /* ── 2×2 Grid ── */
+.index-showcase-section .showcase-grid{direction: rtl;}
 
 /* ── Module Card ── */
 .index-showcase-section .showcase-module {
@@ -3306,21 +3132,12 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .index-showcase-section .module-title {
     font-size: 1.2rem;
   }
-}
-
-/* index-markets */
-.index-markets-section {
-  position: relative;
-  overflow: visible;
-  background-color: #001529;
-  background-image:
+}/* index-markets */
+.index-markets-section{position: relative;overflow: visible;background-color: #001529;background-image:
     radial-gradient(ellipse at 70% 40%, rgba(33,199,199,0.07) 0%, transparent 55%),
     radial-gradient(ellipse at 10% 80%, rgba(33,199,199,0.05) 0%, transparent 45%),
-    linear-gradient(180deg, #001F3F 0%, #001529 60%, #00102A 100%);
-  color: var(--text-light);
-  padding: 96px 0 80px;
-  direction: rtl;
-}
+    linear-gradient(180deg, #001F3F 0%, #001529 60%, #00102A 100%);color: var(--text-light);padding: 96px 0 80px;}html[dir="rtl"] /* index-markets */
+.index-markets-section{direction: rtl;}
 
 .index-markets-section .markets-bg-layer {
   position: absolute;
@@ -3340,20 +3157,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
     );
   pointer-events: none;
   z-index: 0;
-}
-
-.index-markets-section .markets-container {
-  position: relative;
-  z-index: 1;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-  direction: rtl;
-}
+}.index-markets-section .markets-container{position: relative;z-index: 1;max-width: 1280px;margin: 0 auto;padding: 0 40px;display: grid;grid-template-columns: 1fr 1fr;gap: 64px;align-items: center;}html[dir="rtl"] .index-markets-section .markets-container{direction: rtl;}
 
 /* ── RIGHT COLUMN: Content ── */
 .index-markets-section .markets-content-col {
@@ -3466,15 +3270,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.index-markets-section .markets-cluster {
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 16px;
-  align-items: flex-start;
-  direction: rtl;
-}
+}.index-markets-section .markets-cluster{display: grid;grid-template-columns: 44px 1fr;gap: 16px;align-items: flex-start;}html[dir="rtl"] .index-markets-section .markets-cluster{direction: rtl;}
 
 .index-markets-section .cluster-icon-wrap {
   width: 44px;
@@ -3693,23 +3489,18 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
     width: 40px;
     height: 40px;
   }
-}
-/* ZAPPY_POSTGEN_GUARD_RTL_ORDER:בית-markets — stripped 1 order declaration(s) conflicting with RTL grid */
+}/* ZAPPY_POSTGEN_GUARD_RTL_ORDER:בית-markets — stripped 1 order declaration(s) conflicting with RTL grid */
 
 
 /* index-cta */
-.index-cta-section {
-  background-color: #001F3F;
-  background-image:
+.index-cta-section{background-color: #001F3F;background-image:
     radial-gradient(ellipse at 15% 50%, rgba(33,199,199,0.07) 0%, transparent 55%),
     radial-gradient(ellipse at 85% 30%, rgba(255,255,255,0.04) 0%, transparent 50%),
-    linear-gradient(180deg, #001F3F 0%, #001830 100%);
-  color: var(--text-light);
-  padding: 96px 24px;
-  position: relative;
-  overflow: visible;
-  direction: rtl;
-}
+    linear-gradient(180deg, #001F3F 0%, #001830 100%);color: var(--text-light);padding: 96px 24px;position: relative;overflow: visible;}html[dir="rtl"] /* ZAPPY_POSTGEN_GUARD_RTL_ORDER:בית-markets — stripped 1 order declaration(s) conflicting with RTL grid */
+
+
+/* index-cta */
+.index-cta-section{direction: rtl;}
 
 .index-cta-section .index-cta-outer {
   max-width: 760px;
@@ -3858,32 +3649,12 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .index-cta-section .index-cta-reassurance {
     font-size: 0.8125rem;
   }
-}
-
-/* solutions-intro */
-.solutions-intro-section {
-  position: relative;
-  overflow: visible;
-  direction: rtl;
-  background-color: #001F3F;
-  background-image:
+}/* solutions-intro */
+.solutions-intro-section{position: relative;overflow: visible;background-color: #001F3F;background-image:
     radial-gradient(ellipse at 80% 20%, rgba(33,199,199,0.09) 0%, transparent 55%),
     radial-gradient(ellipse at 10% 80%, rgba(33,199,199,0.06) 0%, transparent 45%),
-    linear-gradient(180deg, #0E2A5A 0%, #001F3F 55%, #001529 100%);
-  color: var(--text-light);
-  padding: 140px 0 96px;
-}
-
-.solutions-intro-section .solutions-intro-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 48px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-  direction: rtl;
-}
+    linear-gradient(180deg, #0E2A5A 0%, #001F3F 55%, #001529 100%);color: var(--text-light);padding: 140px 0 96px;}html[dir="rtl"] /* solutions-intro */
+.solutions-intro-section{direction: rtl;}.solutions-intro-section .solutions-intro-container{max-width: 1280px;margin: 0 auto;padding: 0 48px;display: grid;grid-template-columns: 1fr 1fr;gap: 64px;align-items: center;}html[dir="rtl"] .solutions-intro-section .solutions-intro-container{direction: rtl;}
 
 /* ── TEXT COLUMN ── */
 .solutions-intro-section .solutions-intro-text {
@@ -4112,14 +3883,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 @media (max-width: 768px) {
   .solutions-intro-section {
     padding: 100px 0 80px;
-  }
-
-  .solutions-intro-section .solutions-intro-container {
-    grid-template-columns: 1fr !important;
-    gap: 36px;
-    padding: 0 20px;
-    direction: rtl;
-  }
+  }.solutions-intro-section .solutions-intro-container{grid-template-columns: 1fr !important;gap: 36px;padding: 0 20px;}html[dir="rtl"] .solutions-intro-section .solutions-intro-container{direction: rtl;}
 
   .solutions-intro-section .solutions-intro-h1 {
     font-size: 2rem;
@@ -4153,19 +3917,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .solutions-intro-section .solutions-intro-divider-wrapper {
     height: 48px;
   }
-}
-
-/* solutions-product-categories */
-.solutions-product-categories-section {
-  position: relative;
-  overflow: visible;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  background-color: #FFFFFF;
-  color: var(--text-dark);
-  padding: 96px 0 90px;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* solutions-product-categories */
+.solutions-product-categories-section{position: relative;overflow: visible;background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);background-color: #FFFFFF;color: var(--text-dark);padding: 96px 0 90px;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* solutions-product-categories */
+.solutions-product-categories-section{direction: rtl;}
 
 /* ── Container ── */
 .solutions-product-categories-section .spcs-container {
@@ -4217,15 +3971,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 .solutions-product-categories-section .spcs-subheading strong {
   color: var(--text-dark);
   font-weight: 600;
-}
-
-/* ── Grid ── */
-.solutions-product-categories-section .spcs-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  direction: rtl;
-}
+}/* ── Grid ── */
+.solutions-product-categories-section .spcs-grid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 24px;}html[dir="rtl"] /* ── Grid ── */
+.solutions-product-categories-section .spcs-grid{direction: rtl;}
 
 /* ── Card ── */
 .solutions-product-categories-section .spcs-card {
@@ -4394,19 +4142,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .solutions-product-categories-section .spcs-divider-wrapper {
     height: 60px;
   }
-}
-
-/* solutions-standards */
-.solutions-standards-section {
-  position: relative;
-  overflow: visible;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  background-color: #F8FAFC;
-  color: var(--text-dark);
-  padding: 96px 0 72px;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* solutions-standards */
+.solutions-standards-section{position: relative;overflow: visible;background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);background-color: #F8FAFC;color: var(--text-dark);padding: 96px 0 72px;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* solutions-standards */
+.solutions-standards-section{direction: rtl;}
 
 .solutions-standards-section .standards-container {
   max-width: 1200px;
@@ -4647,21 +4385,12 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .solutions-standards-section .block-number {
     font-size: 0.7rem;
   }
-}
-
-/* solutions-applications */
-.solutions-applications-section {
-  direction: rtl;
-  position: relative;
-  overflow: visible;
-  background-color: #0E2A5A;
-  background-image:
+}/* solutions-applications */
+.solutions-applications-section{position: relative;overflow: visible;background-color: #0E2A5A;background-image:
     radial-gradient(circle at 15% 25%, rgba(33,199,199,0.07) 0%, transparent 45%),
     radial-gradient(circle at 85% 75%, rgba(33,199,199,0.05) 0%, transparent 40%),
-    linear-gradient(180deg, #1a3a6b 0%, #0E2A5A 50%, #001F3F 100%);
-  color: var(--text-light);
-  padding: 96px 24px;
-}
+    linear-gradient(180deg, #1a3a6b 0%, #0E2A5A 50%, #001F3F 100%);color: var(--text-light);padding: 96px 24px;}html[dir="rtl"] /* solutions-applications */
+.solutions-applications-section{direction: rtl;}
 
 .solutions-applications-section .solutions-applications-container {
   max-width: 1280px;
@@ -4712,15 +4441,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   margin: 0;
   text-align: center;
   max-width: none !important;
-}
-
-/* ── Grid ── */
-.solutions-applications-section .solutions-applications-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  direction: rtl;
-}
+}/* ── Grid ── */
+.solutions-applications-section .solutions-applications-grid{display: grid;grid-template-columns: repeat(4, 1fr);gap: 24px;}html[dir="rtl"] /* ── Grid ── */
+.solutions-applications-section .solutions-applications-grid{direction: rtl;}
 
 /* ── Card ── */
 .solutions-applications-section .solutions-app-card {
@@ -4875,33 +4598,15 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .solutions-applications-section .solutions-app-card-title {
     font-size: 1.15rem;
   }
-}
-
-/* company-company-profile */
-.company-company-profile-section {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  background-color: #FFFFFF;
-  color: var(--text-dark);
-  padding: 120px 0 72px;
-  position: relative;
-  overflow: visible;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* company-company-profile */
+.company-company-profile-section{background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);background-color: #FFFFFF;color: var(--text-dark);padding: 120px 0 72px;position: relative;overflow: visible;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* company-company-profile */
+.company-company-profile-section{direction: rtl;}
 
 .company-company-profile-section .company-profile-container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
-}
-
-.company-company-profile-section .company-profile-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-  direction: rtl;
-}
+}.company-company-profile-section .company-profile-grid{display: grid;grid-template-columns: 1fr 1fr;gap: 64px;align-items: center;}html[dir="rtl"] .company-company-profile-section .company-profile-grid{direction: rtl;}
 
 /* ── TEXT SIDE (RIGHT in RTL = first column) ── */
 .company-company-profile-section .company-profile-content {
@@ -5149,23 +4854,13 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
     align-items: baseline;
     gap: 8px;
   }
-}
-
-/* company-network */
-.company-network-section {
-  position: relative;
-  overflow: visible;
-  background-color: #0E2A5A;
-  background-image:
+}/* company-network */
+.company-network-section{position: relative;overflow: visible;background-color: #0E2A5A;background-image:
     radial-gradient(circle at 15% 25%, rgba(33,199,199,0.10) 0%, transparent 45%),
     radial-gradient(circle at 85% 70%, rgba(33,199,199,0.07) 0%, transparent 40%),
     radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 60%),
-    linear-gradient(180deg, #1a3a6e 0%, #0E2A5A 40%, #001F3F 100%);
-  color: var(--text-light);
-  padding: 96px 24px 120px;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+    linear-gradient(180deg, #1a3a6e 0%, #0E2A5A 40%, #001F3F 100%);color: var(--text-light);padding: 96px 24px 120px;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* company-network */
+.company-network-section{direction: rtl;}
 
 /* Background Grid Overlay */
 .company-network-section .network-bg-layer {
@@ -5379,15 +5074,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(33,199,199,0.20) 20%, rgba(33,199,199,0.20) 80%, transparent);
   margin-bottom: 56px;
-}
-
-/* ── CLUSTERS ROW ── */
-.company-network-section .network-clusters-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  direction: rtl;
-}
+}/* ── CLUSTERS ROW ── */
+.company-network-section .network-clusters-row{display: grid;grid-template-columns: repeat(3, 1fr);gap: 24px;}html[dir="rtl"] /* ── CLUSTERS ROW ── */
+.company-network-section .network-clusters-row{direction: rtl;}
 
 /* Cluster Card */
 .company-network-section .network-cluster-card {
@@ -5589,19 +5278,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .company-network-section .network-stat-divider {
     display: none;
   }
-}
-
-/* company-process */
-.company-process-section {
-  position: relative;
-  overflow: visible;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  background-color: #FFFFFF;
-  color: var(--text-dark);
-  padding: 96px 24px 120px;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* company-process */
+.company-process-section{position: relative;overflow: visible;background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);background-color: #FFFFFF;color: var(--text-dark);padding: 96px 24px 120px;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* company-process */
+.company-process-section{direction: rtl;}
 
 /* Container */
 .company-process-section .company-process-container {
@@ -5646,15 +5325,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   color: var(--text-muted);
   margin: 0;
   text-align: center;
-}
-
-/* ── Steps Grid ── */
-.company-process-section .company-process-steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  direction: rtl;
-}
+}/* ── Steps Grid ── */
+.company-process-section .company-process-steps{display: grid;grid-template-columns: repeat(4, 1fr);gap: 0;}html[dir="rtl"] /* ── Steps Grid ── */
+.company-process-section .company-process-steps{direction: rtl;}
 
 /* ── Individual Step ── */
 .company-process-section .company-process-step {
@@ -5834,18 +5507,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .company-process-section .company-process-step-number-wrap {
     margin-bottom: 16px;
   }
-}
-
-
-/* company-assurances */
-.company-assurances-section {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  color: var(--text-dark);
-  padding: 96px 24px;
-  position: relative;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* company-assurances */
+.company-assurances-section{background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);color: var(--text-dark);padding: 96px 24px;position: relative;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* company-assurances */
+.company-assurances-section{direction: rtl;}
 
 .company-assurances-section .assurances-container {
   max-width: 1200px;
@@ -5894,16 +5558,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   background: var(--accent);
   margin: 28px auto 0;
   border-radius: 2px;
-}
-
-/* ── Cards Grid ───────────────────────────────── */
-.company-assurances-section .assurances-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  direction: rtl;
-  margin-bottom: 56px;
-}
+}/* ── Cards Grid ───────────────────────────────── */
+.company-assurances-section .assurances-grid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 24px;margin-bottom: 56px;}html[dir="rtl"] /* ── Cards Grid ───────────────────────────────── */
+.company-assurances-section .assurances-grid{direction: rtl;}
 
 /* ── Individual Card ──────────────────────────── */
 .company-assurances-section .assurance-card {
@@ -6107,22 +5764,12 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .company-assurances-section .assurance-card-title {
     font-size: 1.2rem;
   }
-}
-
-/* contact-intro */
-.contact-intro-section {
-  position: relative;
-  overflow: visible;
-  background-color: #001F3F;
-  background-image:
+}/* contact-intro */
+.contact-intro-section{position: relative;overflow: visible;background-color: #001F3F;background-image:
     radial-gradient(ellipse at 80% 0%, rgba(33,199,199,0.08) 0%, transparent 55%),
     radial-gradient(ellipse at 10% 100%, rgba(33,199,199,0.05) 0%, transparent 45%),
-    linear-gradient(180deg, #0E2A5A 0%, #001F3F 60%, #001529 100%);
-  color: var(--text-light);
-  padding: 160px 24px 120px;
-  text-align: center;
-  direction: rtl;
-}
+    linear-gradient(180deg, #0E2A5A 0%, #001F3F 60%, #001529 100%);color: var(--text-light);padding: 160px 24px 120px;text-align: center;}html[dir="rtl"] /* contact-intro */
+.contact-intro-section{direction: rtl;}
 
 .contact-intro-section .contact-intro-container {
   max-width: 760px;
@@ -6266,19 +5913,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .contact-intro-section {
     padding-bottom: 70px;
   }
-}
-
-/* contact-contact-form */
-.contact-contact-form-section {
-  position: relative;
-  overflow: visible;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  background-color: #F8FAFC;
-  color: var(--text-dark);
-  padding: 96px 24px 128px;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* contact-contact-form */
+.contact-contact-form-section{position: relative;overflow: visible;background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);background-color: #F8FAFC;color: var(--text-dark);padding: 96px 24px 128px;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* contact-contact-form */
+.contact-contact-form-section{direction: rtl;}
 
 /* Container */
 .contact-contact-form-section .contact-cform-container {
@@ -6326,16 +5963,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   color: var(--text-muted);
   margin: 0;
   text-align: center;
-}
-
-/* Two-column grid */
-.contact-contact-form-section .contact-cform-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-  direction: rtl;
-}
+}/* Two-column grid */
+.contact-contact-form-section .contact-cform-grid{display: grid;grid-template-columns: 1fr 1fr;gap: 40px;align-items: start;}html[dir="rtl"] /* Two-column grid */
+.contact-contact-form-section .contact-cform-grid{direction: rtl;}
 
 /* ─── FORM COLUMN ─── */
 .contact-contact-form-section .contact-cform-form-col {
@@ -6380,24 +6010,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   color: var(--text-dark);
   margin-bottom: 6px;
   text-align: right;
-}
-
-.contact-contact-form-section .contact-cform-input {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 11px 14px;
-  font-size: 1rem;
-  font-family: 'Rubik', sans-serif;
-  color: var(--text-dark);
-  background: #FAFBFC;
-  border: 1px solid var(--border-light);
-  border-radius: 3px;
-  outline: none;
-  transition: border-color 0.22s ease, box-shadow 0.22s ease;
-  text-align: right;
-  direction: rtl;
-}
+}.contact-contact-form-section .contact-cform-input{display: block;width: 100%;box-sizing: border-box;padding: 11px 14px;font-size: 1rem;font-family: 'Rubik', sans-serif;color: var(--text-dark);background: #FAFBFC;border: 1px solid var(--border-light);border-radius: 3px;outline: none;transition: border-color 0.22s ease, box-shadow 0.22s ease;text-align: right;}html[dir="rtl"] .contact-contact-form-section .contact-cform-input{direction: rtl;}
 
 .contact-contact-form-section .contact-cform-input::placeholder {
   color: #A0AABB;
@@ -6567,15 +6180,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   width: 100%;
   height: 1px;
   background: rgba(31, 63, 120, 0.10);
-}
-
-/* Response Time Grid */
-.contact-contact-form-section .contact-cform-response-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  direction: rtl;
-}
+}/* Response Time Grid */
+.contact-contact-form-section .contact-cform-response-grid{display: grid;grid-template-columns: 1fr 1fr;gap: 16px;}html[dir="rtl"] /* Response Time Grid */
+.contact-contact-form-section .contact-cform-response-grid{direction: rtl;}
 
 .contact-contact-form-section .contact-cform-response-item {
   background: #FFFFFF;
@@ -6712,19 +6319,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .contact-contact-form-section .contact-cform-response-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* contact-service-area */
-.contact-service-area-section {
-  background-color: var(--bg-light);
-  background-image: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
-  color: var(--text-dark);
-  padding: 96px 0 72px;
-  position: relative;
-  overflow: visible;
-  direction: rtl;
-  font-family: 'Rubik', sans-serif;
-}
+}/* contact-service-area */
+.contact-service-area-section{background-color: var(--bg-light);background-image: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);color: var(--text-dark);padding: 96px 0 72px;position: relative;overflow: visible;font-family: 'Rubik', sans-serif;}html[dir="rtl"] /* contact-service-area */
+.contact-service-area-section{direction: rtl;}
 
 .contact-service-area-section .contact-service-area-container {
   max-width: 1200px;
@@ -6898,15 +6495,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   white-space: nowrap;
   pointer-events: none;
   box-shadow: 0 2px 8px rgba(20, 41, 78, 0.07);
-}
-
-/* Region Cards Row */
-.contact-service-area-section .contact-service-area-regions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  direction: rtl;
-}
+}/* Region Cards Row */
+.contact-service-area-section .contact-service-area-regions{display: grid;grid-template-columns: repeat(3, 1fr);gap: 24px;}html[dir="rtl"] /* Region Cards Row */
+.contact-service-area-section .contact-service-area-regions{direction: rtl;}
 
 .contact-service-area-section .contact-service-area-region-card {
   background: #FFFFFF;
@@ -7096,21 +6687,12 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   .contact-service-area-section .map-region-dot {
     display: none;
   }
-}
-
-/* contact-next-steps */
-.contact-next-steps-section {
-  direction: rtl;
-  background-color: #0E2A5A;
-  background-image:
+}/* contact-next-steps */
+.contact-next-steps-section{background-color: #0E2A5A;background-image:
     radial-gradient(circle at 15% 25%, rgba(33,199,199,0.07) 0%, transparent 45%),
     radial-gradient(circle at 85% 75%, rgba(33,199,199,0.05) 0%, transparent 40%),
-    linear-gradient(180deg, #001F3F 0%, #0E2A5A 50%, #001F3F 100%);
-  color: var(--text-light);
-  padding: 96px 24px;
-  position: relative;
-  overflow: visible;
-}
+    linear-gradient(180deg, #001F3F 0%, #0E2A5A 50%, #001F3F 100%);color: var(--text-light);padding: 96px 24px;position: relative;overflow: visible;}html[dir="rtl"] /* contact-next-steps */
+.contact-next-steps-section{direction: rtl;}
 
 .contact-next-steps-section .cnss-container {
   max-width: 1200px;
@@ -7144,17 +6726,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   color: rgba(248,250,252,0.72);
   margin: 0;
   text-align: center;
-}
-
-/* ── Steps Row ── */
-.contact-next-steps-section .cnss-steps {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  gap: 0;
-  width: 100%;
-  direction: rtl;
-}
+}/* ── Steps Row ── */
+.contact-next-steps-section .cnss-steps{display: flex;flex-direction: row;align-items: stretch;gap: 0;width: 100%;}html[dir="rtl"] /* ── Steps Row ── */
+.contact-next-steps-section .cnss-steps{direction: rtl;}
 
 /* ── Divider between steps ── */
 .contact-next-steps-section .cnss-step-divider {
@@ -7362,10 +6936,10 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 .footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
 
 /* RTL footer contact: icon on the right (start) side, text on the left */
-html[dir="rtl"] .footer-contact li, html[dir="rtl"] .site-footer .footer-contact li, html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li { flex-direction: row !important; justify-content: flex-start !important; }
-html[dir="rtl"] .footer-contact .contact-icon { order: 0 !important; }
-html[dir="rtl"] .footer-contact .contact-text { order: 1 !important; }
-html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
+.footer-contact li, .site-footer .footer-contact li, html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-direction: row !important;justify-content: flex-start !important;}
+.footer-contact .contact-icon{order: 0 !important;}
+.footer-contact .contact-text{order: 1 !important;}
+.footer-contact li > a{flex-direction: row !important;}
 
 
 /* ============================================
@@ -7991,6 +7565,566 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+/* ============================================
+   DIRECTION OVERRIDE STYLES
+   Only set direction property, NOT text-align
+   This preserves centered elements
+   ============================================ */
+
+/* Base direction for LTR */
+html[dir="ltr"], html[dir="ltr"] body {
+  direction: ltr !important;
+}
+
+html[dir="ltr"] main,
+html[dir="ltr"] article,
+html[dir="ltr"] section,
+html[dir="ltr"] .content,
+html[dir="ltr"] .container,
+html[dir="ltr"] .wrapper {
+  direction: ltr !important;
+}
+
+/* ONLY apply text-align to legal page content that needs LTR alignment */
+html[dir="ltr"] .legal-content,
+html[dir="ltr"] .terms-content,
+html[dir="ltr"] .privacy-content,
+html[dir="ltr"] .legal-content p,
+html[dir="ltr"] .terms-content p,
+html[dir="ltr"] .privacy-content p,
+html[dir="ltr"] .legal-content li,
+html[dir="ltr"] .terms-content li,
+html[dir="ltr"] .privacy-content li {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Base direction for RTL */
+html[dir="rtl"], html[dir="rtl"] body {
+  direction: rtl !important;
+}
+
+html[dir="rtl"] main,
+html[dir="rtl"] article,
+html[dir="rtl"] section,
+html[dir="rtl"] .content,
+html[dir="rtl"] .container,
+html[dir="rtl"] .wrapper {
+  direction: rtl !important;
+}
+
+/* ONLY apply text-align to legal page content that needs RTL alignment */
+.legal-content,
+html[dir="rtl"] .terms-content,
+html[dir="rtl"] .privacy-content,
+html[dir="rtl"] .legal-content p,
+html[dir="rtl"] .terms-content p,
+html[dir="rtl"] .privacy-content p,
+html[dir="rtl"] .legal-content li,
+html[dir="rtl"] .terms-content li,
+html[dir="rtl"] .privacy-content li{text-align: right !important;}html[dir="rtl"] .legal-content,
+html[dir="rtl"] .terms-content,
+html[dir="rtl"] .privacy-content,
+html[dir="rtl"] .legal-content p,
+html[dir="rtl"] .terms-content p,
+html[dir="rtl"] .privacy-content p,
+html[dir="rtl"] .legal-content li,
+html[dir="rtl"] .terms-content li,
+html[dir="rtl"] .privacy-content li{direction: rtl !important;}
+
+
+/* ============================================
+   V2 NAVIGATION FIX
+   CRITICAL: For V2 sites created in RTL (Hebrew), the nav elements
+   inherit direction:rtl from the body. This reverses how flex order
+   is interpreted. For LTR pages, we MUST set direction:ltr on nav
+   containers to make the flex order work correctly.
+   
+   This section is ONLY included for V2 sites (detected by nav-right-group
+   or nav-cta-container classes) to avoid affecting V1 site layouts.
+   ============================================ */
+
+/* Fix V2 navbar layout for LTR pages */
+/* Direction must apply to all screen sizes, but flex-direction: row is desktop-only */
+html[dir="ltr"] header,
+html[dir="ltr"] nav,
+html[dir="ltr"] .navbar,
+html[dir="ltr"] .nav-container {
+  direction: ltr !important;
+}
+
+html[dir="ltr"] .nav-right-group {
+  direction: ltr !important;
+  order: -1 !important;
+}
+
+html[dir="ltr"] .nav-cta-container {
+  direction: ltr !important;
+  order: 1 !important;
+  margin-left: auto !important;
+}
+
+html[dir="ltr"] .nav-menu,
+html[dir="ltr"] #navMenu {
+  direction: ltr !important;
+}
+
+html[dir="ltr"] .nav-brand {
+  direction: ltr !important;
+  order: -1 !important;
+}
+
+/* DESKTOP ONLY: Horizontal flex layout for navbar elements */
+@media (min-width: 769px) {
+  html[dir="ltr"] header,
+  html[dir="ltr"] nav,
+  html[dir="ltr"] .navbar,
+  html[dir="ltr"] .nav-container {
+    flex-direction: row !important;
+  }
+  
+  html[dir="ltr"] .nav-right-group,
+  html[dir="ltr"] .nav-cta-container {
+    flex-direction: row !important;
+  }
+  
+  html[dir="ltr"] .nav-menu,
+  html[dir="ltr"] #navMenu {
+    flex-direction: row !important;
+  }
+}
+
+
+/* Language Switcher Container - Fixed Position */
+.zappy-lang-switcher-container {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* RTL: Move to left side */
+.zappy-lang-switcher-container{right: auto;left: 12px;}
+
+/* Language Switcher Styles */
+.lang-switcher {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Language switcher positioning - minimal, only gap spacing */
+/* NOTE: Removed margin-left:auto rules that broke V2 layouts */
+/* V2 layouts handle positioning via flexbox, we just add small gap */
+header .lang-switcher,
+nav .lang-switcher,
+.navbar .lang-switcher {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.lang-switcher-current {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.lang-switcher-current:hover {
+  opacity: 0.7;
+}
+
+/* ===========================================
+   LANGUAGE DROPDOWN POSITIONING
+   CRITICAL: position: absolute !important overrides any
+   mobile responsive CSS that resets absolute positioning
+   to relative. The dropdown MUST be absolutely positioned
+   relative to its parent .lang-switcher.
+   
+   HIGH SPECIFICITY SELECTORS needed to override:
+   [style*="position: absolute"]:not(...) { position: relative !important }
+   That selector has specificity ~0,4,0 so we need 0,5,0+ to win
+   =========================================== */
+.lang-switcher-dropdown,
+.lang-switcher .lang-switcher-dropdown,
+div.lang-switcher-dropdown,
+.nav-cta-container .lang-switcher .lang-switcher-dropdown,
+.navbar .nav-cta-container .lang-switcher-dropdown {
+  position: absolute !important;
+  top: 100% !important;
+  /* Default LTR: align dropdown's left edge to switcher's left edge */
+  left: 0;
+  right: auto;
+  margin-top: 6px;
+  min-width: 150px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.2s ease;
+  overflow: hidden;
+  z-index: 1002 !important;
+}
+
+/* Ultra-high specificity override for problematic mobile responsive CSS */
+/* The problematic rule [style*="position: absolute"]:not():not():not() has specificity 0,4,0 */
+/* We need 0,5,0+ to win, so we add extra class/attribute selectors */
+.lang-switcher .lang-switcher-dropdown[style*="position: absolute"],
+.lang-switcher .lang-switcher-dropdown[style*="position:absolute"],
+.nav-cta-container .lang-switcher .lang-switcher-dropdown[style],
+.navbar .nav-cta-container .lang-switcher-dropdown[style],
+div.lang-switcher > div.lang-switcher-dropdown[style] {
+  position: absolute !important;
+  top: 100% !important;
+  /* Default LTR: align to left */
+  left: 0;
+  right: auto;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background 0.15s ease;
+}
+
+.lang-option{text-align: right;}
+
+/* RTL: align dropdown's right edge to switcher's right edge */
+.lang-switcher-dropdown,
+html[lang="he"] .lang-switcher-dropdown,
+html[lang="ar"] .lang-switcher-dropdown{right: 0;left: auto;}
+
+.lang-option:hover {
+  background: #f5f5f5;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  /* Hide desktop lang-switcher on mobile - hamburger menu handles it */
+  /* High specificity needed to override stored CSS: .nav-cta-container .lang-switcher { display: flex !important } */
+  .lang-switcher,
+  .nav-cta-container .lang-switcher,
+  .nav-container .lang-switcher,
+  .navbar .lang-switcher,
+  .navbar .nav-cta-container .lang-switcher,
+  .nav-icons-left .lang-switcher,
+  .nav-ecommerce-icons .lang-switcher {
+    display: none !important;
+  }
+  
+  .zappy-lang-switcher-container {
+    display: none !important;
+  }
+  
+  /* ===========================================
+     MOBILE LANGUAGE SUBMENU (inside hamburger)
+     =========================================== */
+  .mobile-lang-menu {
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+  
+  .mobile-lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+    text-align: left;
+  }
+  
+  .mobile-lang-toggle{text-align: right;}
+  
+  .mobile-lang-chevron {
+    margin-left: auto;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  
+  .mobile-lang-chevron{margin-left: 0;margin-right: auto;}
+  
+  .mobile-lang-options {
+    display: none;
+    flex-direction: column;
+    padding: 0 0 8px 0;
+  }
+  
+  .mobile-lang-options.open {
+    display: flex !important;
+  }
+  
+  .mobile-lang-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 30px 12px 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    color: inherit;
+    text-align: left;
+    opacity: 0.85;
+    transition: opacity 0.15s ease;
+  }
+  
+  .mobile-lang-option{text-align: right;padding: 12px 50px 12px 30px;}
+  
+  .mobile-lang-option:hover,
+  .mobile-lang-option:active {
+    opacity: 1;
+  }
+  
+  .mobile-lang-option img {
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+}
+
+/* ===========================================
+   RTL MOBILE HORIZONTAL OVERFLOW FIX
+   Prevents left whitespace gap in RTL mobile
+   caused by elements extending past viewport
+   =========================================== */
+
+/* Prevent horizontal scroll on RTL pages */
+/* Using 'clip' instead of 'hidden' to avoid breaking position:sticky */
+/* 'hidden' causes overflow-y to compute as 'auto', creating a scroll container */
+,
+html[dir="rtl"] body{overflow-x: clip !important;max-width: 100vw !important;}
+
+/* Ensure carousel containers clip overflow to prevent horizontal scroll */
+.zappy-carousel-container,
+.zappy-carousel-wrapper,
+.benefits-section,
+.testimonials-section,
+[class*="carousel"] {
+  overflow-x: hidden !important;
+}
+
+/* Ensure lang-switcher parent clips its positioned children */
+.lang-switcher {
+  overflow: visible; /* Keep visible for dropdown to show */
+}
+
+/* ===========================================
+   MOBILE NAV BUTTON POSITIONING
+   CSS handles positioning based on html[dir] attribute.
+   This allows dynamic RTL/LTR switching without inline styles.
+   
+   LTR (default): hamburger LEFT (20px), phone RIGHT (20px)
+   RTL: hamburger RIGHT (20px), phone LEFT (20px) - mirrored
+   =========================================== */
+@media (max-width: 768px) {
+  /* Base positioning and visibility for mobile nav buttons */
+  /* CRITICAL: display: flex overrides any desktop display: none rules */
+  .mobile-toggle,
+  html:not([data-zappy-site-type="ecommerce"]) .phone-header-btn {
+    display: flex !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 1001 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+  
+  /* Phone button color - use accent color for visibility */
+  html:not([data-zappy-site-type="ecommerce"]) .phone-header-btn {
+    color: var(--accent, #f59e0b) !important;
+  }
+  
+  html:not([data-zappy-site-type="ecommerce"]) .phone-header-btn svg {
+    width: 24px !important;
+    height: 24px !important;
+    fill: currentColor !important;
+  }
+  
+  /* LTR positioning (default) - hamburger LEFT, phone RIGHT */
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .mobile-toggle,
+  html[dir="ltr"] .mobile-toggle {
+    left: 20px !important;
+    right: auto !important;
+  }
+  
+  html:not([data-zappy-site-type="ecommerce"]):not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .phone-header-btn,
+  html:not([data-zappy-site-type="ecommerce"])[dir="ltr"] .phone-header-btn {
+    right: 20px !important;
+    left: auto !important;
+  }
+  
+  /* LTR mobile menu slides from LEFT */
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-menu,
+  html[dir="ltr"] .nav-menu {
+    left: 0 !important;
+    right: auto !important;
+  }
+  
+  /* ===========================================
+     MOBILE NAV MENU - VERTICAL LAYOUT FIX
+     CRITICAL: Override any desktop flex-direction: row rules
+     The mobile menu MUST stack vertically (column), not horizontally (row)
+     =========================================== */
+  html[dir="ltr"] .nav-menu,
+  html[dir="ltr"] .nav-menu.active,
+  html[dir="ltr"] #navMenu,
+  html[dir="ltr"] #navMenu.active,
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-menu,
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-menu.active {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  
+  /* RTL mobile menu - also vertical layout */
+  .nav-menu,
+  html[dir="rtl"] .nav-menu.active,
+  html[dir="rtl"] #navMenu,
+  html[dir="rtl"] #navMenu.active,
+  html[lang="he"] .nav-menu,
+  html[lang="he"] .nav-menu.active,
+  html[lang="ar"] .nav-menu,
+  html[lang="ar"] .nav-menu.active{flex-direction: column !important;align-items: stretch !important;}
+  
+  /* LTR mobile menu text alignment - left aligned */
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-menu li,
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-menu a,
+  html[dir="ltr"] .nav-menu li,
+  html[dir="ltr"] .nav-menu a {
+    text-align: left !important;
+  }
+  
+  /* ===========================================
+     LTR MOBILE NAV-CONTAINER LAYOUT FIX
+     V2 sites have nav-container with flex-direction: row-reverse
+     for RTL. For LTR, we need flex-direction: row and centered logo.
+     =========================================== */
+  html[dir="ltr"] .nav-container,
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-container {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+  
+  /* LTR: Center the logo/nav-brand in mobile navbar */
+  html[dir="ltr"] .nav-brand,
+  html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-brand {
+    order: 0 !important;
+    margin: 0 auto !important;
+  }
+  
+  /* RTL: Center the logo/nav-brand in mobile navbar */
+  .nav-brand,
+  html[lang="he"] .nav-brand,
+  html[lang="ar"] .nav-brand{order: 0 !important;margin: 0 auto !important;}
+  
+  /* RTL lang-switcher dropdown constraint */
+  .lang-switcher{position: relative;}
+  
+  .lang-switcher-dropdown{left: auto !important;right: 0 !important;max-width: calc(100vw - 20px);}
+  
+  /* ===========================================
+     RTL MOBILE NAV BUTTON POSITIONING
+     In RTL: hamburger RIGHT, phone LEFT (mirror of LTR)
+     =========================================== */
+  .mobile-toggle,
+  html[lang="he"] .mobile-toggle,
+  html[lang="ar"] .mobile-toggle{left: auto !important;right: 20px !important;}
+  
+  :not([data-zappy-site-type="ecommerce"]) .phone-header-btn,
+  html[lang="he"]:not([data-zappy-site-type="ecommerce"]) .phone-header-btn,
+  html[lang="ar"]:not([data-zappy-site-type="ecommerce"]) .phone-header-btn{left: 20px !important;right: auto !important;}
+
+  /* Explicitly hide phone button on e-commerce sites (cleaner than fighting with e-commerce CSS). */
+  html[data-zappy-site-type="ecommerce"] .phone-header-btn {
+    display: none !important;
+  }
+  
+  /* RTL mobile menu slides from RIGHT */
+  .nav-menu,
+  html[lang="he"] .nav-menu,
+  html[lang="ar"] .nav-menu{left: auto !important;right: 0 !important;}
+  
+  /* ===========================================
+     MOBILE LANGUAGE SWITCHER
+     Desktop lang-switcher is hidden on mobile.
+     Language selection is handled by the hamburger
+     menu submenu (.mobile-lang-menu) instead.
+     High specificity to override stored CSS.
+     =========================================== */
+  .lang-switcher,
+  .nav-cta-container .lang-switcher,
+  .nav-container .lang-switcher,
+  .navbar .lang-switcher,
+  .navbar .nav-cta-container .lang-switcher,
+  .nav-icons-left .lang-switcher,
+  .nav-ecommerce-icons .lang-switcher {
+    display: none !important;
+  }
+}
+
+/* Desktop: force-show the lang-switcher.
+   This counters a CSS-processing bug where the mobile display:none rules
+   can leak outside their @media block during minification/concatenation. */
+@media (min-width: 769px) {
+  .lang-switcher,
+  .nav-cta-container .lang-switcher,
+  .nav-container .lang-switcher,
+  .navbar .lang-switcher,
+  .navbar .nav-cta-container .lang-switcher,
+  .nav-icons-left .lang-switcher,
+  .nav-ecommerce-icons .lang-switcher {
+    display: inline-flex !important;
+  }
+}
+
+/* Ensure hover/focus opens the dropdown even when CSS is concatenated */
+.lang-switcher:hover .lang-switcher-dropdown,
+.lang-switcher:focus-within .lang-switcher-dropdown {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+
+.lang-option:hover {
+  background: #f5f5f5;
+}
+
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
@@ -8064,12 +8198,11 @@ nav .sub-menu.zappy-empty-submenu,
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
-/* NOTE: Includes both html[dir="rtl"] AND [dir="rtl"] selectors as fallback */
+/* NOTE: Includes both AND [dir="rtl"] selectors as fallback */
 /* because some pages may be wrapped with <html lang="en"> (missing dir="rtl" on html) */
 /* but still have dir="rtl" on <body> or other ancestor elements */
 
-@media (max-width: 768px) {
-  /* RTL Mobile Toggle (hamburger) - positioned on RIGHT */
+@media (max-width: 768px){/* RTL Mobile Toggle (hamburger) - positioned on RIGHT */
   /* Using multiple parent selectors for higher specificity */
   html[dir="rtl"] .navbar .mobile-toggle,
   html[dir="rtl"] nav .mobile-toggle,
@@ -8083,12 +8216,10 @@ nav .sub-menu.zappy-empty-submenu,
   [dir="rtl"] .mobile-toggle,
   html[lang="he"] .mobile-toggle,
   html[lang="ar"] .mobile-toggle {
-    left: auto !important;
-    right: 15px !important;
-  }
+    left: auto !important;right: 15px !important;}
   
   /* RTL Phone Button - positioned on LEFT */
-  html[dir="rtl"] .navbar .phone-header-btn,
+  .navbar .phone-header-btn,
   html[dir="rtl"] nav .phone-header-btn,
   html[dir="rtl"] header .phone-header-btn,
   html[dir="rtl"] .nav-container .phone-header-btn,
@@ -8099,13 +8230,10 @@ nav .sub-menu.zappy-empty-submenu,
   [dir="rtl"] .nav-container .phone-header-btn,
   [dir="rtl"] .phone-header-btn,
   html[lang="he"] .phone-header-btn,
-  html[lang="ar"] .phone-header-btn {
-    left: 15px !important;
-    right: auto !important;
-  }
+  html[lang="ar"] .phone-header-btn{left: 15px !important;right: auto !important;}
   
   /* RTL Mobile Menu - slides from RIGHT */
-  html[dir="rtl"] .navbar .nav-menu,
+  .navbar .nav-menu,
   html[dir="rtl"] nav .nav-menu,
   html[dir="rtl"] header .nav-menu,
   html[dir="rtl"] .nav-container .nav-menu,
@@ -8116,22 +8244,17 @@ nav .sub-menu.zappy-empty-submenu,
   [dir="rtl"] .nav-container .nav-menu,
   [dir="rtl"] .nav-menu,
   html[lang="he"] .nav-menu,
-  html[lang="ar"] .nav-menu {
-    left: auto !important;
-    right: 0 !important;
-  }
+  html[lang="ar"] .nav-menu{left: auto !important;right: 0 !important;}
   
   /* RTL Mobile Menu Links - text align right */
-  html[dir="rtl"] .nav-menu a,
+  .nav-menu a,
   html[dir="rtl"] .nav-menu li,
   [dir="rtl"] .nav-menu a,
   [dir="rtl"] .nav-menu li,
   html[lang="he"] .nav-menu a,
   html[lang="he"] .nav-menu li,
   html[lang="ar"] .nav-menu a,
-  html[lang="ar"] .nav-menu li {
-    text-align: right !important;
-  }
+  html[lang="ar"] .nav-menu li{text-align: right !important;}
 }
 
 /* ========== END RTL MOBILE NAVBAR FIX ========== */
@@ -8733,7 +8856,7 @@ section[data-hero-type] {
   }
   #navMenu,
   .nav-menu,
-  html[dir="rtl"] .nav-menu,
+  .nav-menu,
   html[dir="rtl"] .navbar .nav-menu,
   html[dir="rtl"] nav .nav-menu,
   html[dir="rtl"] header .nav-menu,
@@ -8744,19 +8867,21 @@ section[data-hero-type] {
   [dir="rtl"] .nav-container .nav-menu,
   [dir="rtl"] .nav-menu,
   html[lang="he"] .nav-menu,
-  html[lang="ar"] .nav-menu {
-    /* Force position:fixed so the --ios-viewport-gap shift is measured
+  html[lang="ar"] .nav-menu{/* Force position:fixed so the --ios-viewport-gap shift is measured
        against the (visual) viewport, not whatever container the menu may
        have been reparented into by earlier v1/v2 patches.
        --zappy-navbar-bottom is set by the runtime JS companion and
        defaults to 70px — this lets us override the v2 `top: 100%` (which
        with position:fixed would resolve to the full viewport height and
        push the menu off-screen). */
-    position: fixed !important;
-    top: var(--zappy-navbar-bottom, 70px) !important;
-    right: var(--ios-viewport-gap, 0px) !important;
-  }
+    position: fixed !important;top: var(--zappy-navbar-bottom, 70px) !important;right: var(--ios-viewport-gap, 0px) !important;}
 }
+
+/* RTL footer contact: icon on the right (start) side, text on the left */
+.footer-contact li, html[dir="rtl"] .site-footer .footer-contact li, html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-direction: row !important;justify-content: flex-start !important;}
+.footer-contact .contact-icon{order: 0 !important;}
+.footer-contact .contact-text{order: 1 !important;}
+.footer-contact li > a{flex-direction: row !important;}
 
 /* Spec table BiDi fix: isolate cells so mixed LTR/RTL content renders correctly */
 .specs-table th, .specs-table td { unicode-bidi: plaintext !important; }
