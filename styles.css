@@ -8137,6 +8137,36 @@ html[dir="rtl"] body{overflow-x: clip !important;max-width: 100vw !important;}
 }
 
 
+
+.index-hero-section .index-hero-card > p:first-child {
+  text-align: right !important;
+}
+
+.index-hero-section .index-hero-h1 {
+  text-align: right !important;
+}
+
+.index-hero-section .index-hero-body {
+  text-align: right !important;
+}
+
+.index-hero-section .index-hero-h3 {
+  text-align: right !important;
+  justify-content: flex-end !important;
+}
+
+.index-hero-section .index-hero-ctas {
+  justify-content: flex-start !important;
+}
+
+.index-hero-section .index-hero-card > p,
+html[dir="rtl"] .index-hero-section .index-hero-h1,
+html[dir="rtl"] .index-hero-section .index-hero-body,
+html[dir="rtl"] .index-hero-section .index-hero-h3{text-align: right !important;}
+
+.index-hero-section .index-hero-h3{justify-content: flex-end !important;}
+
+.index-hero-section .index-hero-ctas{justify-content: flex-start !important;}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
