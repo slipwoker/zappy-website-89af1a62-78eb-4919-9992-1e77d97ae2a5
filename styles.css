@@ -7993,13 +7993,14 @@ body.accessibility-widget-visible ._access-menu {
 }
 
 @media (max-width: 768px) {
-.navbar .nav-menu a {
+.navbar #navMenu a {
   color: var(--background-color) !important;
 }
 }
 
 @media (max-width: 768px) {
-.navbar .nav-menu a {
+.navbar .nav-menu li a,
+  .navbar .nav-menu li a:visited {
   color: var(--background-color) !important;
 }
 }
