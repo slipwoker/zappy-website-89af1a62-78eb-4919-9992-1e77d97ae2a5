@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://t-d-global.zappy5.app/sitemap.xml
+Sitemap: https://tdglobal-group.com/sitemap.xml

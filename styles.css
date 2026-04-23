@@ -7991,6 +7991,18 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+@media (max-width: 768px) {
+.navbar .nav-menu a {
+  color: var(--background-color) !important;
+}
+}
+
+@media (max-width: 768px) {
+.navbar .nav-menu a {
+  color: var(--background-color) !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

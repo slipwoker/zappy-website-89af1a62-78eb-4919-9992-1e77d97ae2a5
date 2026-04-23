@@ -5,33 +5,33 @@
 ## Pages
 
 ### T.D GLOBAL — T.D GLOBAL
-https://t-d-global.zappy5.app
+https://tdglobal-group.com
 T.D GLOBAL מייצגת מפעלי ייצור עולמיים בתחום גופי תאורה חוץ מתקדמים וכבלי חשמל בתקן בינלאומי. הפתרונות שלנו מגיעים לקבלנים וחברות תשתית ברחבי העולם. גלו את ההבדל האמיתי.
 
 ### מובילים את תעשיית החשמל והתאורה הגלובלית — T.D GLOBAL
-https://t-d-global.zappy5.app/company
+https://tdglobal-group.com/company
 T.D GLOBAL היא חברת B2B בינלאומית עם ניסיון מוכח בייצוג מפעלי ייצור מובילים בעולם. אמינות, מקצועיות והובלה טכנולוגית — אלו הערכים שמניעים אותנו בכל פרויקט ובכל מדינה.
 
 ### פתרונות תאורה וכבלים שמשנים תשתיות — T.D GLOBAL
-https://t-d-global.zappy5.app/solutions
+https://tdglobal-group.com/solutions
 מגופי תאורה חוץ חכמים ועד ספק כבלי חשמל מתח נמוך ברמה עולמית — T.D GLOBAL מציעה את הטכנולוגיה המתקדמת ביותר לפרויקטים תשתיתיים גדולים. בדקו את הקטלוג המלא שלנו.
 
 ### צרו קשר ובנו את שיתוף הפעולה הבא — T.D GLOBAL
-https://t-d-global.zappy5.app/contact
+https://tdglobal-group.com/contact
 מחפשים ספק כבלי חשמל מתח נמוך או גופי תאורה חוץ לפרויקט הבא שלכם? צוות T.D GLOBAL זמין לקבלנים וחברות תשתית ברחבי העולם. פנו אלינו עוד היום ונמצא יחד את הפתרון המושלם.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://t-d-global.zappy5.app/privacy
+https://tdglobal-group.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://t-d-global.zappy5.app/terms
+https://tdglobal-group.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://t-d-global.zappy5.app/accessibility
+https://tdglobal-group.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -43,5 +43,5 @@ Information about WCAG compliance and accessibility features.
 
 # Additional Resources
 
-- **Sitemap**: https://t-d-global.zappy5.app/sitemap.xml
-- **Robots.txt**: https://t-d-global.zappy5.app/robots.txt
+- **Sitemap**: https://tdglobal-group.com/sitemap.xml
+- **Robots.txt**: https://tdglobal-group.com/robots.txt
