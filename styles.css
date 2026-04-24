@@ -2493,12 +2493,11 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   order: 1;
 }
 
-/* ── CTA Buttons ── */
 .index-hero-section .index-hero-ctas {
   display: flex;
   flex-direction: row;
   gap: 14px;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
