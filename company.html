@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2300,6 +2300,8 @@ GLOBAL לכתובת המקצועית עבור אלו שמחפשים
   </a>
   
   <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
@@ -6995,7 +6997,7 @@ GLOBAL לכתובת המקצועית עבור אלו שמחפשים
     
     // Always default to the site's default language, not browser language
     // This prevents breaking the original site layout on first visit
-    return 'he';
+    return 'en';
   }
   
   // Callbacks for language change events (e.g., e-commerce content refresh)
@@ -7011,7 +7013,7 @@ GLOBAL לכתובת המקצועית עבור אלו שמחפשים
         return langResources.translation[key];
       }
       // Fallback to default language
-      const fallbackResources = this.resources['he'];
+      const fallbackResources = this.resources['en'];
       if (fallbackResources && fallbackResources.translation && fallbackResources.translation[key]) {
         return fallbackResources.translation[key];
       }
@@ -7248,7 +7250,7 @@ GLOBAL לכתובת המקצועית עבור אלו שמחפשים
     // Swap inline text-align on content elements when direction changes.
     // RTL-primary sites have text-align:right baked into inline styles;
     // these must become text-align:left when viewing in LTR, and vice versa.
-    var defaultIsRTL = rtlLanguages.includes('he');
+    var defaultIsRTL = rtlLanguages.includes('en');
     var needsSwap = isRTL !== defaultIsRTL;
     document.querySelectorAll('[style]').forEach(function(el) {
       if (el.closest('header') || el.closest('nav') || el.closest('.navbar') || el.closest('.lang-switcher')) return;
